@@ -13,11 +13,12 @@
 
 */
 /* structural styles */
+/* This is the initial setup that is required */
 html {
     height: 100%;
     background: #D4AF37;
 }
-
+/* I added a background of an image and borders so that it can look kind of nice */
 body {
     background: url(br_paper.png);
     border-left: 1px double white;
@@ -38,7 +39,7 @@ article figure img{
     width: 33.33%;
 }
 
-
+/* This image is the logo of the website and I made it block so it centers. The margin-left and right is also for me to try and center it too. */
 img#logo {
     display: block;
     border: 10px;
@@ -50,6 +51,7 @@ img#logo {
 nav#first ul li{
     background: radial-gradient(#D4AF37, white);
 }
+/* This is to change the second nav to  */
 nav#second ul li{
     text-decoration: underline;
     padding-bottom: 6px;
@@ -69,7 +71,7 @@ nav#first ul li {
     overflow: hidden;
     width: 20%;
 }
-
+/* This is something that makes the h2 readable and pretty */
 h2 {
     text-align: center;
     display: block;
@@ -84,6 +86,39 @@ aside nav {
     box-shadow: #D4AF37 0px 0px 8px 4px;
 }
 
+img#logo {
+    filter: drop-shadow(lightblue -10px 4px 3px);
+}
+nav#first {
+    filter: drop-shadow(#D4AF37 -10px 4px 3px);
+}
+img#front, figcaption#a {
+    transform: translateY(19px);
+}
+img#side, figcaption#c {
+    transform: translateY(-19px);
+}
+figcaption#a {
+    transform: translateY(19px);
+}
+/* I had to do this because I didn't use divs cause I probably wouldn't do them correctly. */
+figcaption#c {
+    transform: translateY(-19px);
+}
+figcaption#d, img#dining {
+    transform: translateY(19px);
+}
+
+figcaption#f, img#living {
+    transform: translateY(-19px);
+}
+
+figcaption#g, img#bed1 {
+    transform: translateY(19px);
+}
+figcaption#i, img#bed3 {
+    transform: translateY(-19px);
+}
 /* color navs */
 aside nav#second ul li a:hover {
     color: #D4AF37;
@@ -98,10 +133,13 @@ nav#first ul li a:hover {
 nav#first ul li a:visited, nav#first ul li a:link {
     color: blue;
 }
+/* This is just so that I can make it fit the page the way I want it to */
 figure img {
     width: 300px;
 }
-
-figcaption {
-    
+/* The blockquote is what I did to make the border and item have an identifier for me to style with. Then I could add the border CSS and background color to make it look like a box. */
+blockquote {
+    padding: 10px;
+    border: solid 1px black;
+    background: grey;
 }
